@@ -95,6 +95,7 @@ class PlayState extends FlxState
 				if (gamepad != null)
 					gamepad.deadZoneMode = FlxGamepadDeadZoneMode.createByName(mode);
 			}, new FlxUIDropDownHeader(130)));
+		deadZoneModeDropDown.dropDirection = Up;//Fixes dropdown to not go off screen
 	}
 	
 	function createDisconnectedOverlay():Void
